@@ -1,0 +1,12 @@
+namespace Topluluk.Models
+{
+    public class OgrenciTopluluklari
+    {
+        public int Id { get; set; }
+        public string? Isim { get; set; }
+        public int KurulusYili { get; set; }
+        public string? ToplulukBaskani { get; set; }
+        public string? AkademikDanismani { get; set; }
+        public string? WebAdresi { get; set; }
+    }
+}

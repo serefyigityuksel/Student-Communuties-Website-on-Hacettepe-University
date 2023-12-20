@@ -1,0 +1,47 @@
+@model Topluluk.Models.OgrenciTopluluklari
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div>
+    <h4>OgrenciTopluluklari</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Isim)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Isim)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.KurulusYili)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.KurulusYili)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ToplulukBaskani)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ToplulukBaskani)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AkademikDanismani)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AkademikDanismani)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.WebAdresi)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.WebAdresi)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Düzenle</a> |
+    <a asp-action="Index">Listeye Dön</a>
+</div> 
+
